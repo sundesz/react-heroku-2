@@ -2,7 +2,7 @@ GET http://localhost:3001/api/notes
 
 
 ###
-GET http://localhost:3001/api/notes/1
+GET http://localhost:3001/api/notes/610d58590da0bac6207670d7
 
 
 ###
@@ -17,4 +17,14 @@ Content-Type: application/json
     "content": "Javascript is easy",
     "date": "2019-05-30T17:30:31.098Z",
     "important": true
+}
+
+
+###
+PUT http://localhost:3001/api/notes/610d58590da0bac6207670d7
+Content-Type: application/json
+
+{
+    "content": "HTML is Easy",
+    "important": false
 }
